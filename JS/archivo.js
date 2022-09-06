@@ -45,7 +45,7 @@ while(seleccion.toLowerCase() != "si" && seleccion.toLowerCase() != "no"){
                     precio = 350
                     break;
                 case "2":
-                    precio= 350
+                    precio = 350
                     break;
                 case "3":
                     precio = 350
@@ -54,7 +54,7 @@ while(seleccion.toLowerCase() != "si" && seleccion.toLowerCase() != "no"){
                     precio = 350
                     break;
                 case "5":
-                    precio= 600
+                    precio = 600
                     break;
                 case "6":
                     precio = 600
@@ -63,7 +63,7 @@ while(seleccion.toLowerCase() != "si" && seleccion.toLowerCase() != "no"){
                     precio = 400
                     break;
                 case "8":
-                    precio= 500
+                    precio = 500
                     break;
                 default:
                     break;
@@ -75,12 +75,15 @@ while(seleccion.toLowerCase() != "si" && seleccion.toLowerCase() != "no"){
         alert("No tenemos ese producto")
     }
     seleccion = prompt("¿Desea comprar otro de nuestro productos si o no?")
-
-    while(seleccion.toLowerCase() == "no"){
+    
+    while(seleccion.toLowerCase() === "no"){
         carrito.forEach((carritoFinal) => {
-            console.log(`Producto: ${carritoFinal.producto}, Cantidad: ${carritoFinal.cantidad},
-            total a pagar por producto ${carritoFinal.cantidad*carritoFinal.precio}`)
+            console.log(`producto: ${carritoFinal.producto}, cantidad: ${carritoFinal.cantidad},
+            total a pagar por producto ${carritoFinal.cantidad * carritoFinal.precio}`)
         })
         break;
     }
 }
+const total = carrito.reduce((acc, el) => acc + el.precio * el.cantidad,0)
+carrito = document.getElementById('ul')
+carrito.insertAdjacentHTML('afterend',` $ ${total}`)

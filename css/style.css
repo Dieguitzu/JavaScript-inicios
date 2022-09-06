@@ -1,15 +1,15 @@
-/*#div{
+#div{
     background-color: rgb(139, 119, 158);
     border: 1px;
-    width: 300px;
+    width: 350px;
     height: 150px;
     text-align: center;
     text-decoration: none;
     list-style-type: none;
     font-family: 'Times New Roman', Times, serif;
     position: relative;
-    left: 400px;
+    left: 450px;
     box-shadow: 10px 5px 5px rgb(56, 56, 56);
     font-size: x-large;
     padding-top: 10px;
-}*/
+}
