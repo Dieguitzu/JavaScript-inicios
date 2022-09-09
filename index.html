@@ -4,16 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">  
+    <link rel="stylesheet" type="text/css" href="./css/main.css">  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
-    <div id="div">
-        <li id="li">
-            <ul id="ul">Total de su compra: </ul>
-            <ul></ul>
-        </li>
+    <main>
+    <h3 class="text-center p-5">Jabones naturales</h3>        
+    <div class="d-flex column justify-content-space-around m-5" >
+        <div class="card col-lg-3 m-3" id="tienda-div" style="width: 18rem;">
+            <div id="item" class="card-body">
+                <h5 class="card-title" id="titulo">Jabón de Carbon Activado</h5>
+                <p class="card-text" id="text">Limpieza profunda, exfoliante, combate el acné y puntos negros, piel más firme, reductor de poros</p>
+                <h6 id="item-price">$350</h6>
+                <button id="comprar" class="btn btn-primary">Comprar</button>
+            </div>
+        </div>
+        <div class="card col-lg-3 m-3" id="tienda-div" style="width: 18rem;">
+            <div id="item" class="card-body">
+                <h5 class="card-title" id="titulo">Jabón de canela</h5>
+                <p class="card-text" id="text">Canela y manzanilla, anti-oxidante, anti-inflamatorio, astringente, limpieza profunda, mejora la circulación</p>
+                <h6 id="item-price">$350</h6>
+                <button id="comprar" class="btn btn-primary">Comprar</button>
+            </div>
+        </div>
+        <div class="card col-lg-3 m-3" id="tienda-div" style="width: 18rem;">
+            <div id="item" class="card-body">
+                <h5 class="card-title" id="titulo">Jabón de Lavanda</h5>
+                <p class="card-text" id="text">Aromaterapeutico, hidratante, anti-inflamatorio y regenerador, pieles sencibles o dañadas, apto para tatuajes</p>
+                <h6 id="item-price">$350</h6>
+                <button id="comprar" class="btn btn-primary">Comprar</button>
+            </div>
+        </div>
+        <div class="card col-lg-3 m-3" id="tienda-div" style="width: 18rem;">
+            <div id="item" class="card-body">
+                <h5 class="card-title" id="titulo">Jabón de Neutro</h5>
+                <p class="card-text" id="text">Hipoalergénico, regula el Ph, apto para tatuajes, limpieza profunda, hidrata y elimina grasa en los poros</p>
+                <h6 id="item-price">$350</h6>
+                <button id="comprar" class="btn btn-primary">Comprar</button>
+            </div>
+        </div>
     </div>
+
+    <div class="row shoppingCartItem d-flex align-item-center" id="carrito">
+        <dic class="col-6 d-flex align-item-center">
+            <div class="shopping-cart-item d-flex align-items-center h-100 border-botton pb-2 pt-3" id="carrito-productos">
+                <img src="" class="shopping-cart-image" id="carrito-producto-img">
+                <h6 class="text-center ml-3 mb-0" id="carrito-titulo">
+                jabon
+                </h6>
+            </div>   
+        </dic>
+        <div class="col-2">
+            <div class="d-flex align-item-center  h-100 border-bottom pb-2 pt-1" id="carrito-producto-price">
+            <p class="mb-0 justify-content-center align-item-center" id="carrito-price">$350</p>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="d-flex justify-content-between align-items-center h-100 border-bottom pb-2 pt-3">
+                <input id="" type="number" value="1">
+                <button class="btn btn-danger button-delete" type="button">X</button>
+            </div>
+        </div>
+    </div>
+</main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="./JS/archivo.js"></script>
 </body>
 </html>
