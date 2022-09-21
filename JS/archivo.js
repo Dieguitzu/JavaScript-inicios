@@ -32,12 +32,7 @@ const desestructurar = (productos) => {
 }
 desestructurar(productos)
 
-
 const listaDProductos = document.querySelector('.listaDProductos')
-
-
-
-
 
 const total = document.querySelector('.carritoTotal')
 let carrito = [];
@@ -138,21 +133,5 @@ const actualizarCarrito = () =>  {
     function buttonCompraClick(){
         carritoItem.innerHTML = ' ';
         total.innerText = '$ ';
-        alert('Gracias, vuelva prontos!')
+        swal("Gracias, vuelva pronto!");
     }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
