@@ -19,35 +19,40 @@ body {
     margin: 10px;
     padding-bottom: 10px;
     text-align: center; }
-  body #tienda-div {
+  body .card {
+    width: 50em;
+    margin: 10px;
+    padding: 1em;
     background-color: rgba(245, 245, 245, 0.4);
     box-shadow: 10px 3px 20px #202020;
     cursor: pointer;
     font-family: sans-serif, "Segoe UI", Tahoma, Verdana;
     text-align: center;
     margin-bottom: 10px;
-    max-height: 30em; }
-    body #tienda-div #titulo {
+    max-height: 30em;
+    display: flex;
+    flex-wrap: nowrap; }
+    body .card #titulo {
       font-family: sans-serif, "Segoe UI", Tahoma, Verdana;
       font-size: 1.7em;
       padding-bottom: 15px;
       padding-top: 10px;
       text-align: center;
       color: #5c285ce6; }
-    body #tienda-div #text {
+    body .card #text {
       font-family: sans-serif, "Segoe UI", Tahoma, Verdana;
       font-size: 1em;
       color: #381938;
       text-align: center; }
-    body #tienda-div:hover {
+    body .card:hover {
       transform: scale(1.1);
       transition: all .5s;
       box-shadow: 5px 3px 40px #202020; }
-    body #tienda-div .btn {
+    body .card .btn {
       background-color: #d7b5f7b3;
       color: #00080f;
       border-color: #381938; }
-      body #tienda-div .btn:hover {
+      body .card .btn:hover {
         background-color: #381938;
         color: #dee1e4;
         border-color: #d7b5f7b3; }
