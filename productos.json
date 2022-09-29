@@ -1,0 +1,39 @@
+[{
+    "id": 1,
+    "nombre": "Jabon de carbon activado",
+    "precio":400,
+    "cantidad":1,
+    "tamaño":"100gr",
+    "propiedades":"Limpieza profunda, exfoliante, combate el acné y puntos negros, piel más firme, reductor de poros"
+},
+{
+    "id": 2,
+    "nombre": "Jabon de lavanda",
+    "precio":350,
+    "cantidad":1,
+    "tamaño":"100gr",
+    "propiedades":"Aromaterapeutico, hidratante, anti-inflamatorio y regenerador, pieles sencibles o dañadas, apto para tatuajes"
+},
+{
+    "id": 3,
+    "nombre": "Jabon de canela y curcuma",
+    "precio":350,
+    "cantidad":1,
+    "tamaño":"100gr",
+    "propiedades":"Anti-oxidante, anti-inflamatorio, astringente, limpieza profunda, mejora la circulación"
+},
+{
+    "id": 4,
+    "nombre": "Jabon de neutro",
+    "precio":350,
+    "cantidad":1,
+    "tamaño":"100gr",
+    "propiedades":"Hipoalergénico, regula el Ph, apto para tatuajes, limpieza profunda, hidrata y elimina grasa en los poros"
+}
+]
+
+
+
+
+
+

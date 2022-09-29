@@ -24,6 +24,14 @@ cabello.push(new Producto(6,"Acondicionador",600,1,"100gr","hidrata, regenera, d
  //spread
 const productos = [...jabon,...cabello];
 
+// Fetch
+
+function cargarProductos(){
+    fetch('productos.json')
+        .then(respuesta => respuesta.json())
+        .then(productos => console.log(productos))}
+        cargarProductos();
+
 
 //No encontre funcionalidad aún dentro de mi proyecto, pero lo aplico de alguna forma!
 const desestructurar = (productos) => {
@@ -98,7 +106,7 @@ const actualizarCarrito = () =>  {
         </div>
         <div class="col-2">
             <div class="shopping-cart-price d-flex align-item-center h-100 border-bottom pb-2 pt-1" id="carrito-producto-price">
-                <p class="mb-0 text-center justify-content-center align-item-center pb-2 pt-3" id="carrito-price">${prod.precio}</p>
+                <p class="mb-0 text-center justify-content-center align-item-center pb-2 pt-3" id="carrito-price">$${prod.precio}</p>
             </div>
         </div>
         <div class="col-4">
@@ -122,11 +130,6 @@ const actualizarCarrito = () =>  {
         const indice = carrito.indexOf(item)
         carrito.splice(indice,1)
         actualizarCarrito()
-    }
-    function buttonCompraClick(){
-        carritoItem.innerHTML = ' ';
-        carritoTotal();
-        alert('Gracias, vuelva prontos!')
     }
     const buttonCompra = document.querySelector('.btn-success')
     buttonCompra.addEventListener('click', buttonCompraClick)
