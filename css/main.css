@@ -20,8 +20,8 @@ body {
     padding-bottom: 10px;
     text-align: center; }
   body .card {
-    width: 50em;
-    margin: 10px;
+    width: 20em;
+    margin: 25px;
     padding: 1em;
     background-color: rgba(245, 245, 245, 0.4);
     box-shadow: 10px 3px 20px #202020;
@@ -30,11 +30,12 @@ body {
     text-align: center;
     margin-bottom: 10px;
     max-height: 30em;
-    display: flex;
-    flex-wrap: nowrap; }
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: visible; }
     body .card #titulo {
       font-family: sans-serif, "Segoe UI", Tahoma, Verdana;
-      font-size: 1.7em;
+      font-size: 1.4em;
       padding-bottom: 15px;
       padding-top: 10px;
       text-align: center;
